@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  
+  --color-shadow-blue: #1a1b2e;
+  --color-shadow-purple: #2d1b4e;
+  --color-mana-cyan: #00f2ff;
+  --color-mana-glow: rgba(0, 242, 255, 0.5);
+}
+
+@layer base {
+  body {
+    @apply bg-shadow-blue text-slate-100 antialiased overflow-hidden;
+    font-family: var(--font-sans);
+  }
+  
+  h1, h2, h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.mana-glow {
+  box-shadow: 0 0 20px var(--color-mana-glow);
+}
+
+.mana-text-glow {
+  text-shadow: 0 0 10px var(--color-mana-cyan);
+}
