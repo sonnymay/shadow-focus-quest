@@ -18,3 +18,14 @@ View your app in AI Studio: https://ai.studio/apps/109f49ad-a29c-4899-804c-80d5b
 2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
 3. Run the app:
    `npm run dev`
+## About
+
+Shadow Focus Quest is a gamified focus timer inspired by Solo Leveling, Digimon, and Ragnarok Online. Stay focused during sessions to earn XP, level up your hero, and awaken powerful shadow soldiers with AI-generated art.
+
+## Features
+
+- Pomodoro-style focus sessions with RPG progression
+- AI-generated artwork for shadow soldiers (powered by Gemini)
+- Unlock and awaken monsters like Agumon and Poring as you level up
+- Streak tracking and session history
+- TypeScript + React frontend with smooth animations
